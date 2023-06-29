@@ -1,0 +1,58 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+</head>
+
+<body>
+
+	
+	
+	<!-- start product Area -->
+
+	<section style="margin-top: 130px;">
+		<!-- single product slide -->
+		<div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6 text-center">
+						<div class="section-title">
+							{% if wishlists %}
+								<h1>My Wishlist</h1>
+							{% else %}
+								<h1>No Products In Wishlist</h1>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- single product -->
+					{% for i in wishlists %}
+					<div class="col-lg-3 col-md-6">
+						<div class="single-product">
+							<a href="{% url 'product_detail' pk=i.product.pk %}">
+								<img class="img-fluid" src="{{i.product.product_image.url}}" alt="" style="width:250px;height: 250px;">
+								<div class="product-details">
+									<h6>{{i.product.product_name}}</h6>
+									<div class="price">
+										<h6>Rs. {{i.product.product_price}}</h6>
+										
+									</div>
+									
+								</div>
+							</a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		
+	
+</body>
+
+</html>
+{% endblock %}
