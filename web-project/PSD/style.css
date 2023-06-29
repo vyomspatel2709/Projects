@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.top-head{
+    background-color: #303030;
+}
+.row{
+    display: flex;
+}
+.col-50{
+    width: 50%;
+}
+.col-20{
+  width: 20%;
+}
+.jcs{
+    justify-content:space-between ;
+}
+.links ul li{
+    display: inline-block;
+}
+.links ul li a{
+    color: aliceblue;
+    margin: 0 60px 0 0;
+    text-decoration: none;
+}
+.icon i{
+    color: aliceblue;
+    font-size: 20px;
+}
+.line{
+    line-height: 100px;
+}
+.logo img{
+    width: 90px;
+    vertical-align: middle;
+}
+.home{
+    background-image: url(./img/backgroundimg.png);
+    background-position: top;
+}
+.home-text{
+    padding: 100px 0 100px 0;
+}
+.home-text h1{
+    padding: 80px 0 20px 0;
+    margin: 80px 0 0 0;
+    font-size: 100px;
+    color: aliceblue;
+}
+.home-text p{
+    font-size: 23px;
+    color: aliceblue;
+    padding:10px 0 35px 0;
+}
+.home-text button{
+    background-color:#e8631c;
+    font-size: 15px;
+    color: aliceblue;
+    padding: 10px 50px;
+    border:none;
+}
+.sec-two{
+    height: 800px;
+    background-color: #e8631c;
+}
+.sec-two-text h1{
+    padding: 60px 0 30px 0;
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue;
+
+}
+.sec-two-text p{
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+    padding: 0 0 50px 0;
+}
+.sec-three{
+    height:800px;
+    background-color: #303030;
+}
+.sec-three-text h1{
+    padding: 60px 0 30px 0;
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+.sec-three-text p{
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+    padding: 0 0 50px 0;
+}
+.col-70{
+    width: 70%;
+    margin: 0 auto;
+}
+.col-30{
+    width: 30%;
+}
+.cart img{
+    width: 100%;
+}
+.cart{
+    background-color: #303030;
+
+}
+.cart h1{
+    padding: 15px 0;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+.cart p{
+    padding:0 0 15px 0;
+    font-size: 15px;
+    color: aliceblue;
+    text-align: center;
+}
+.cont{
+    
+    border-radius: 8px;
+    background-color: #e8631c;
+    padding: 0 0 10px 0;
+}
+.cont img{
+    padding: 20px 0 0 120px;
+}
+.cont h1{
+    padding: 10px 0;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+.cont p{
+    padding:0 0 15px 0;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+.cont button{
+    background-color: #303030;
+    font-size: 15px;
+    color: aliceblue;
+    padding: 20px 80px;
+    margin: 0 0 0 90px;
+    border-style:unset;
+    
+}
+.sec-four {
+    background-color: #e8631c;
+
+}
+
+.sec-four img {
+    width: 100%;
+}
+
+.sec-four-text h2 {
+    font-size: 50px;
+    color: aliceblue;
+    margin: 0 0 40px 0;
+    /* text-align: center; */
+}
+
+.sec-four-text p {
+    font-size: 25px;
+    color: aliceblue;
+    margin: 0 0 40px 0;
+    /* text-align: center; */
+}
+
+.sec-four-text button {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: aliceblue;
+    padding: 10px 50px;
+    background-color: #303030;
+    display: block; 
+    margin: 0 auto; 
+}
+.sec-four-text {
+    padding: 0 100px;
+}
+.sec-five{
+    background-image: url(./img/backgroundimg.png);
+    /* height: 950px; */
+}
+.sec-five-text p{
+
+    padding: 100px 0 0 0 ;
+   font-size: 35px;
+   color: aliceblue;
+   text-align: center;
+}
+.sec-five-text h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 60px;
+    padding: 50px 0 120px 0;
+}
+.sec-p{
+    padding: 100px 0 0 0;
+    margin: 50px 0 0  0;
+}
+.sec-h2{
+    padding: 0 0 100px 0;
+    margin: 0 0 100px  0;
+}
+.sec-four-text {
+    padding: 100px 0;
+}
+footer{
+    background-color: #e8631c;
+}
+.Musicology-text{
+    padding: 50px 100px 50px 0;
+    color: aliceblue;
+}
+.about-foot{
+    padding: 60px 10px;
+    color: aliceblue;
+}
+.Services{
+    padding: 60px 10px;
+    color: aliceblue;
+}
+.other-foot{
+    padding: 60px 10px;
+    color: aliceblue;
+}
