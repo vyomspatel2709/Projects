@@ -1,0 +1,79 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+</head>
+
+<body>
+
+	<!-- Start Banner Area -->
+	<section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1>Product Details Page</h1>
+					<nav class="d-flex align-items-center">
+						<a href="{% url 'seller_index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
+						<a href="single-product.html">product-details</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!--================Single Product Area =================-->
+	<div class="product_image_area">
+		<div class="container">
+			<div class="row s_product_inner">
+				<div class="col-lg-6">
+					<div class="s_Product_carousel">
+						<div class="single-prd-item">
+							<img class="img-fluid" src="{{product.product_image.url}}" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="{{product.product_image.url}}" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="{{product.product_image.url}}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-1">
+					<div class="s_product_text">
+						<h3>{{product.product_name}}</h3>
+						<h2>{{product.product_price}}</h2>
+						
+						<p>Company: {{product.product_company}}</p>
+						<p>Size : {{product.product_size}}</p>
+						{% if request.session.email %}
+							{% if wishlist_flag == True %}
+								<a href="{% url 'remove_from_wishlist' pk=product.pk %}"><input type="button" value="Remove From Wishlist" class="btn btn-danger"></a>
+							{% else %}
+								<a href="{% url 'add_to_wishlist' pk=product.pk %}"><input type="button" value="Add To Wishlist" class="btn btn-primary"></a>
+							{% endif %}
+							
+							{% if cart_flag == True %}
+								<a href="{% url 'remove_from_cart' pk=product.pk %}"><input type="button" value="Remove From Cart" class="btn btn-danger"></a>
+							{% else %}
+								<a href="{% url 'add_to_cart' pk=product.pk %}"><input type="button" value="Add To Cart" class="btn btn-primary"></a>
+							{% endif %}
+						{% else %}
+							<a href="{% url 'login' %}"><input type="button" value="Login For More" class="btn btn-primary"></a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================End Single Product Area =================-->
+
+	
+</body>
+
+</html>
+{% endblock %}
